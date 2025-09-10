@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Atharva Ayurveda Medical College and Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar {
+            background-color: #0d6efd; /* Hospital blue */
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #cfe2ff !important;
+        }
+        .btn-login {
+            background-color: white;
+            color: #0d6efd;
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-login:hover {
+            background-color: #cfe2ff;
+        }
+        .btn-register {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-register:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+    <style>
+
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --accent-color: #198754;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-section {
+            background:url(5.jpeg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background-color: var(--primary-color);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .feature-box {
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .stats-box {
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-member {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .team-img {
+            transition: all 0.5s ease;
+        }
+        
+        .team-member:hover .team-img {
+            transform: scale(1.1);
+        }
+        
+        .team-info {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(13, 110, 253, 0.9);
+            color: white;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover .team-info {
+            bottom: 0;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-1"></i> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php"><i class="fas fa-user-md me-1"></i> Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.php"><i class="fas fa-procedures me-1"></i> patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php"><i class="fas fa-user-md me-1"></i> Doctors</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-login me-2"><i class="fas fa-sign-in-alt me-1"></i> Login</a>
+                    <a href="signup.php" class="btn btn-register"><i class="fas fa-user-plus me-1"></i> Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section text-center animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="row" style="text-align: center;margin-top: 50px;">
+    
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate__animated animate__fadeInLeft">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="lead">Atharva Ayurveda Medical College and Hospital is a premier institution dedicated to providing comprehensive medical care through traditional and modern ayurvedic practices.</p>
+                    <p> Rajiv Gandhi Education Society is a premier non profit making Educational Organization functioning under the president ship of Shri G.S. Patil, Ex-MLA of Ron. The society was Registered under the Society’s Registration Act (Registration No: 64/ 92-93). The society has under its wings more than seven Educational Institutions imparting quality Education right from primary level to degree level which includes among others a college of Ayurveda Medicine and Hospital, B.Ed, B.P. Ed., D.Ed, ITI, High school for girls, primary and pre-primary schools, PUC Science and Arts College at Ron. </p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary btn-lg pulse-animation">Watch Our Story</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate__animated animate__fadeInRight">
+                  <div  style="text-align: right;">  <img src="m.jpg" alt="Hospital Building" class="img-fluid rounded shadow" style="width: 100%; height: 50%;">
+                    </div>                
+                </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center animate__animated animate__fadeIn">
+            <h2 class="section-title">Our Mission & Values</h2>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fas fa-heartbeat fa-2x text-primary"></i>
+                        </div>
+                        <h3>Compassionate Care</h3>
+                        <p>We treat patients and families with the utmost compassion and respect during challenging times with modern ayurvedic care.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fas fa-flask fa-2x text-primary"></i>
+                        </div>
+                        <h3>Medical Excellence</h3>
+                        <p>We combine cutting-edge technology with evidence-based practices for optimal outcomes with modern ayurvedic care.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <i class="fas fa-users fa-2x text-primary"></i>
+                        </div>
+                        <h3>Community Focus</h3>
+                        <p>We're committed to improving the health and wellbeing of our entire community with modern ayurvedic care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 mb-md-0 animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="stats-box" style="background-color: #dadde2;">
+                        <h2 class="display-4 fw-bold" style="color: #0d6efd;">25+</h2>
+                        <p style="color: #0d6efd;">Years of Service</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="stats-box" style="background-color: #dee1e5;">
+                        <h2 class="display-4 fw-bold" style="color: #0d6efd;">20+</h2>
+                        <p style="color: #0d6efd;">Specialist Doctors with modern ayurvedic care</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 animate__animated animate__fadeIn animate__delay-3s">
+                    <div class="stats-box" style="background-color: #e9ebed;">
+                        <h2 class="display-4 fw-bold" style="color: #0d6efd;">10k+</h2>
+                        <p style="color: #0d6efd;">Patients Treated with modern ayurvedic care</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate__animated animate__fadeIn animate__delay-4s">
+                    <div class="stats-box" style="background-color: #f6f6f6;">
+                        
+                        <h2 class="display-4 fw-bold" style="color: #0d6efd;">5+</h2>
+                        <p style="color: #0d6efd;">Medical Departments with modern ayurvedic care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Meet Our Leadership</h2>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                    <div class="team-member">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTftP0PW5dMy6KwSaOk6pOVO1h2_2S4MqI-m5ST-hDwTqoSwqzFjOSTWfct-yXqQzDRAqMyFwubjJgdi62ZohLhfYS-HpE34KGfHvvcm6JYK8tB8JOtxY0Aebts10ju5u7aM2qINo-nsc/s1600/GSPatil-RON-MLA-BRIGHTFOCUSS.JPG" alt="G S Patil" class="img-fluid team-img">
+                        <div class="team-info">
+                            <h4>G S Patil (MLA, Ron)</h4>
+                            <p>Chairman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="team-member">
+                        <img src="Dhanvantari Images.jpeg" alt="Lord Dhanvantari" class="img-fluid team-img" style="width: 100%; height: 100%;">
+                        <div class="team-info">
+                            <h4>Lord Dhanvantari</h4>
+                            <p>God of Ayurveda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="team-member">
+                        <img src="3.png" alt="Dr. Rajanish Meti" class="img-fluid team-img" style="width: 100%; height: 100%;">
+                        <div class="team-info">
+                            <h4>Dr. Rajanish Meti</h4>
+                            <p>Principal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+        <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+          <div class="row">
+            <!-- About Us -->
+            <div class="col-md-4 mb-4">
+                <img src="logo.png" alt="Atharva Ayurveda Medical College and Hospital" class="img-fluid mb-3" style="max-width: 400px;">
+                <h5 class="text-uppercase mb-3">About Us</h5>
+              <p>
+                RGE Society’s Atharva Ayurveda Medical College & Hospital, Dharwad, is a premier non-profit educational organization functioning under the presidency of Shri. G.S. Patil.
+              </p>
+              <a href="https://atharvaamcd.org/about-us/" class="btn btn-outline-primary btn-sm">Learn More</a>
+            </div>
+      
+            <!-- Contact Address -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-uppercase mb-3">Contact Address</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  Plot No. 1-B1, Opp. Prajavani Press, Belur Industrial Area, Dharwad - 580011, Karnataka
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-phone-alt me-2"></i>
+                  0836-2224555
+                </li>
+                <li class="mb-2">
+                  <i class="fas fa-mobile-alt me-2"></i>
+                  9986660145
+                </li>
+                <li class="mb-2">
+                  <i class="far fa-envelope me-2"></i>
+                  <a href="mailto:atharvaamcd@gmail.com">atharvaamcd@gmail.com</a>
+                </li>
+                <li class="mb-2">
+                  <i class="far fa-clock me-2"></i>
+                  Mon-Sat: 10:00 AM - 05:00 PM<br>
+                  Lunch Break: 1:00 PM - 2:00 PM
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Location Map -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-uppercase mb-3">Location Map</h5>
+              <div class="ratio ratio-4x3">
+                <iframe
+                  src="https://maps.google.com/maps?q=Atharva%20Ayurveda%20Medical%20College%20and%20Hospital&t=m&z=12&output=embed&i"
+                  title="Atharva Ayurveda Medical College and Hospital"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+      
+          <hr class="my-4" />
+      
+          <div class="row">
+            <div class="col text-center">
+              <p class="mb-0">&copy; 2025 Hospital Management System. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate__animated');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const animation = entry.target.getAttribute('data-animation');
+                        entry.target.classList.add('animate__animated', animation);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
